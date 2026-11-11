@@ -1,0 +1,13 @@
+public class MainApp {
+2 public static void main ( String [] args ) {
+3
+4 Book book1 = new Book () ;
+5 book1 . title = " Clean Code ";
+6 book1 . author = " Robert C. Martin ";
+7 book1 . price = 3200.0;
+8
+9 // Anyone can break the data !
+10 book1 . price = -500.0; // No error -- but nonsense !
+11 book1 . displayInfo () ;
+12 }
+13 }
